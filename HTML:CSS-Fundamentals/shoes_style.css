@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 825px;
+
+  margin: 200px auto;
+  position: relative;
+}
+.article {
+  border: black 4px solid;
+}
+
+/* h2::before {
+  content: "S A L E";
+  background-color: rgb(199, 16, 16);
+  font-size: 12px;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+} */
+.sale {
+  position: absolute;
+  background-color: rgb(199, 16, 16);
+  padding: 5px 7px;
+  font-family: sans-serif;
+  font-style: bold;
+  letter-spacing: 5px;
+  border: rgb(199, 16, 16) 1px solid;
+  color: white;
+  top: -17px;
+  left: -34px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.price {
+  font-style: bold;
+  font-size: large;
+  /* float: left; */
+}
+
+.style {
+  color: grey;
+  /* padding-bottom: 20px; */
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  /* float: right; */
+  /* padding: 10px; */
+}
+.information {
+  padding-top: 10px;
+  /* padding-bottom: 20px; */
+}
+.link:link {
+  color: black;
+  font-family: sans-serif;
+}
+
+.link:visited {
+  color: black;
+  font-family: sans-serif;
+}
+
+.link:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list-tittle {
+  text-transform: uppercase;
+}
+.list {
+  list-style: square;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.list li {
+  margin: 5px;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  font-size: 18px;
+  padding: 15px;
+  /* width: 100%; */
+}
+
+.button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-top: black solid 3px;
+  /* border-right: black solid 5px;
+  border-bottom: black solid 2.5px;
+  border-left: black solid 2.5px; */
+}
+
+.color-box1 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: black;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+
+.color-box2 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: rgb(0, 0, 255);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+.color-box3 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: rgb(255, 0, 98);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+.color-box4 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: rgb(255, 174, 0);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+.color-box5 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: rgb(114, 236, 13);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+.color-box6 {
+  width: 20px;
+  height: 20px;
+  /* border: black solid 1px; */
+
+  background-color: rgb(139, 71, 22);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* display: inline-block; */
+}
+
+/* 
+
+.product-details {
+  width: 243px;
+  float: left;
+  padding-left: 40px;
+}
+
+.shoes-image {
+  width: 243px;
+  float: left;
+} */
+/* flex box */
+/* 
+
+
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.img {
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-details {
+  flex: 1;
+} */
+.color-box {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.product-price {
+  display: flex;
+
+  gap: 30px;
+  height: 40px;
+  align-items: center;
+}
+
+/* css grid */
+.article {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.button {
+  grid-column: 1/-1;
+}
+.title {
+  grid-column: 1/-1;
+}
